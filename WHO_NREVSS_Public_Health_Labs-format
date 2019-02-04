@@ -20,20 +20,20 @@ Region Types:
             	South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, 
 				Virginia, and West Virginia
 		East South Central - Alabama, Kentucky, Mississippi, and Tennessee
-		West South Cental - Arkansas, Louisiana, Oklahoma, and Texas
+		West South Central - Arkansas, Louisiana, Oklahoma, and Texas
 		Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
 		Pacific - Alaska, California, Hawaii, Oregon, and Washington
 
 Season Description - 
 
-Total Specimens - The weekly total number of speicmens tested.
+Total Specimens - The weekly total number of specimens tested.
 
-A (2009 H1N1) - The number of specimens that tested postivie for Influenza A (2009 H1N1)
-A (H3) - The number of specimens that tested postivie for Influenza A (H3)
-A (Subtyping not Performed) - The number of specimens that tested postivie for Influenza A (Subtyping not Performed)
+A (2009 H1N1) - The number of specimens that tested positive for Influenza A (2009 H1N1)
+A (H3) - The number of specimens that tested positive for Influenza A (H3)
+A (Subtyping not Performed) - The number of specimens that tested positive for Influenza A (Subtyping not Performed)
 
-B - The number of specimens that tested postivie for Influenza B
-BVic - The number of specimens that tested postivie for Influenza B/Victoria
-BYam - The number of specimens that tested postivie for Influenza B/Yamagata
+B - The number of specimens that tested positive for Influenza B
+BVic - The number of specimens that tested positive for Influenza B/Victoria
+BYam - The number of specimens that tested positive for Influenza B/Yamagata
 
-H3N2v - The number of specimens that tested postivie for Influenza A (H3N2) Variant Virus
+H3N2v - The number of specimens that tested positive for Influenza A (H3N2) Variant Virus
