@@ -1,39 +1,99 @@
-ILI (influenza-like illness) - fever (temperature of 100°F [37.8° C] or greater) and a cough and/or a sore throat in the absence of a known cause other than influenza.
+File Summary:
+Number of columns: 15
+Description: ILINet consists of approximately 3,200 outpatient healthcare providers in all 50 states, Puerto Rico, the District of Columbia and the U.S. Virgin Islands reporting over 36 million patient visits each year. Each week, approximately 2,000 outpatient healthcare providers around the country report data to CDC on the total number of patients seen and the number of those patients with influenza-like illness (ILI) by age group (0-4 years, 5-24 years, 25-49 years, 50-64 years, and ≥ 65 years). For this system, ILI is defined as fever (temperature of 100°F [37.8°C] or greater) and a cough and/or a sore throat in the absence of a known cause other than influenza.
 
-Region Types:
-	National
-	States
-	HHS Regions:
-        	Region 1 - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
-            	Region 2 - New Jersey, New York, Puerto Rico, and U.S. Virgin Islands
-            	Region 3 - Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, and West Virginia
-            	Region 4 - Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee
-            	Region 5 - Illinois, Indiana, Michigan, Minnesota, Ohio, and Wisconsin
-            	Region 6 - Arkansas, Louisiana, New Mexico, Oklahoma, and Texas
-            	Region 7 -  Iowa, Kansas, Missouri, and Nebraska
-            	Region 8 - Colorado, Montana, North Dakota, South Dakota, Utah, and Wyoming
-            	Region 9 - Arizona, California, Hawaii, and Nevada
-            	Region 10 - Alaska, Idaho, Oregon, and Washington
-    	Census Regions - 
-            	New England - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
-            	Middle Atlantic - New Jersey, New York, Pennsylvania, Puerto Rico, and U.S. Virgin Islands
-            	East North Central - Indiana, Illinois, Michigan, Ohio, and Wisconsin
-            	West North Central - Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota
-            	South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, 
-				Virginia, and West Virginia
-		East South Central - Alabama, Kentucky, Mississippi, and Tennessee
-		West South Central - Arkansas, Louisiana, Oklahoma, and Texas
-		Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
-		Pacific - Alaska, California, Hawaii, Oregon, and Washington
+Column Summary:
 
-Week - The MMWR week is the week of the epidemiologic year for which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned by the reporting local or state health department for the purposes of MMWR disease incidence reporting and publishing. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year. 
+Column 1
+Name: REGION TYPE
+Description: 
+Data Type: String
+Possible Values: ["National", "States", "HHS Regions", "Census Regions"]
 
-ILI Weighted - The percentage of patient visits to healthcare providers for ILI reported each week is weighed on the basis of state population. The baseline is developed by calculating the mean percentage of patient visits for ILI during non-influenza weeks for the previous three seasons and adding two standard deviations.
+Column 2
+Name: REGION
+Description:
+Data Type: String
+Possible Values: 
+	When the region type is "National": ["X"]
+	When the region type is "States": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "American Samoa", "Commonwealth of the Northern Mariana Islands", "Puerto Rico", "Virgin Islands", "New York City", "Los Angeles"]
+	When the region type is "HHS Regions": [Region][1-10]
+	When the region type is "Census Regions": ["New England", "Middle Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"]
 
-Age Groups - 0-4 years, 5-24 years, 25-49 years, 50-64 years, and ≥ 65 years.
+Column 3
+Name: YEAR
+Description: The epidemiologic year for which the disease report was conducted.
+Data Type: Integer
+Possible Values: [0 .. +∞)
 
-ILI Total - Total number of patients who tested postive for an influenza-like illness.
+Column 4
+Name: WEEK
+Description: The week is the week of the epidemiologic year for which the disease report was conducted. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year.
+Data Type: Integer
+Possible Values: [1 .. 53]
 
-Number of Providers - The number of outpatient healthcare providers that supplied patient information.
+Column 5
+Name: % WEIGHTED ILI
+Description: Weighted percentage of patients that were reported having influenza-like illnesses. The percentage of patient visits to healthcare providers for ILI reported each week is weighted on the basis of state population. This percentage is compared each week with the national baseline.
+Data Type: Double
+Possible Values: [0, 100]
 
-Total Patients - The total number of patients that were tested.
+Column 6
+Name: %UNWEIGHTED ILI
+Description: Unweighted percentage of patients that were reported having influenza-like illnesses.
+Data Type: Double
+Possible Values: [0, 100]
+
+Column 7
+Name: AGE 0-4
+Description: Number of patients between the ages of 0 and 4 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 8
+Name: AGE 25-49
+Description: Number of patients between the ages of 25 and 49 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 9
+Name: AGE AGE 25-64
+Description: Number of patients between the ages of 25 and 64 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 10
+Name: AGE 5-24
+Description: Number of patients between the ages of 5 and 24 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 11
+Name: AGE 50-64
+Description: Number of patients between the ages of 50 and 64 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 12
+Name: AGE 65
+Description: Number of patients 65 and older that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 13
+Name: ILITOTAL
+Description: Total number of patients that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 14
+Name: NUM. OF PROVIDERS
+Description: Number of outpatient healthcare providers that supplied reports.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 15
+Name: TOTAL PATIENTS
+Description: Total number of patients that were tested for influenza-like illnesses.
+Data Type: String
+Possible Values: integer or "X"
