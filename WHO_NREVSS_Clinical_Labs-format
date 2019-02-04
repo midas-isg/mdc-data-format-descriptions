@@ -20,20 +20,20 @@ Region Types:
             	South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, 
 				Virginia, and West Virginia
 		East South Central - Alabama, Kentucky, Mississippi, and Tennessee
-		West South Cental - Arkansas, Louisiana, Oklahoma, and Texas
+		West South Central - Arkansas, Louisiana, Oklahoma, and Texas
 		Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
 		Pacific - Alaska, California, Hawaii, Oregon, and Washington
 
 Week - The MMWR week is the week of the epidemiologic year for which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned by the reporting local or state health department for the purposes of MMWR disease incidence reporting and publishing. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year. 
 
-Total Specimens - The weekly total number of speicmens tested.
+Total Specimens - The weekly total number of specimens tested.
 
 Total A - The number of specimens tested positive with  Influenza A.
 
 Total B - The number of specimens tested positive with  Influenza B.
 
-Percent Positive - The percentage of speicmens that tested positive with either Influenza A or B.
+Percent Positive - The percentage of specimens that tested positive with either Influenza A or B.
 
-Percentage A - The percentage of speicmens that tested positive with Influenza A.
+Percentage A - The percentage of specimens that tested positive with Influenza A.
 
-Percentage B - The percentage of speicmens that tested positive with Influenza B.
+Percentage B - The percentage of specimens that tested positive with Influenza B.
