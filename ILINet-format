@@ -35,9 +35,10 @@ Possible Values:
 
 Column 3
 Name: YEAR
-Description: The epidemiologic year for which the disease report was conducted.
+Description: The epidemiologic year for which the disease report was conducted. As of February 2019, the earliest year that 
+	FluView has data for is 1997.
 Data Type: Integer
-Possible Values: [0 .. ∞)
+Possible Values: [1997 .. ∞)
 
 Column 4
 Name: WEEK
