@@ -1,1 +1,39 @@
+Region Types:
+	National
+	States
+	HHS Regions:
+    		Region 1 - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
+            	Region 2 - New Jersey, New York, Puerto Rico, and U.S. Virgin Islands
+            	Region 3 - Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, and West Virginia
+            	Region 4 - Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee
+            	Region 5 - Illinois, Indiana, Michigan, Minnesota, Ohio, and Wisconsin
+            	Region 6 - Arkansas, Louisiana, New Mexico, Oklahoma, and Texas
+            	Region 7 -  Iowa, Kansas, Missouri, and Nebraska
+            	Region 8 - Colorado, Montana, North Dakota, South Dakota, Utah, and Wyoming
+            	Region 9 - Arizona, California, Hawaii, and Nevada
+            	Region 10 - Alaska, Idaho, Oregon, and Washington
+    	Census Regions - 
+            	New England - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
+            	Middle Atlantic - New Jersey, New York, Pennsylvania, Puerto Rico, and U.S. Virgin Islands
+            	East North Central - Indiana, Illinois, Michigan, Ohio, and Wisconsin
+            	West North Central - Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota
+            	South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, 
+				Virginia, and West Virginia
+		East South Central - Alabama, Kentucky, Mississippi, and Tennessee
+		West South Cental - Arkansas, Louisiana, Oklahoma, and Texas
+		Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
+		Pacific - Alaska, California, Hawaii, Oregon, and Washington
 
+Week - The MMWR week is the week of the epidemiologic year for which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned by the reporting local or state health department for the purposes of MMWR disease incidence reporting and publishing. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year. 
+
+Total Specimens - The weekly total number of speicmens tested.
+
+Total A - The number of specimens tested positive with  Influenza A.
+
+Total B - The number of specimens tested positive with  Influenza B.
+
+Percent Positive - The percentage of speicmens that tested positive with either Influenza A or B.
+
+Percentage A - The percentage of speicmens that tested positive with Influenza A.
+
+Percentage B - The percentage of speicmens that tested positive with Influenza B.
