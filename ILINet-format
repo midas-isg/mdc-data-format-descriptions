@@ -1,8 +1,28 @@
 Region Types:
     National
-    HHS Regions - 
+	States
+    HHS Regions:
+            Region 1 - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
+            Region 2 - New Jersey, New York, Puerto Rico, and U.S. Virgin Islands
+            Region 3 - Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, and West Virginia
+            Region 4 - Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee
+            Region 5 - Illinois, Indiana, Michigan, Minnesota, Ohio, and Wisconsin
+            Region 6 - Arkansas, Louisiana, New Mexico, Oklahoma, and Texas
+            Region 7 -  Iowa, Kansas, Missouri, and Nebraska
+            Region 8 - Colorado, Montana, North Dakota, South Dakota, Utah, and Wyoming
+            Region 9 - Arizona, California, Hawaii, and Nevada
+            Region 10 - Alaska, Idaho, Oregon, and Washington
     Census Regions - 
-    States -
+            New England - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
+            Middle Atlantic - New Jersey, New York, Pennsylvania, Puerto Rico, and U.S. Virgin Islands
+            East North Central - Indiana, Illinois, Michigan, Ohio, and Wisconsin
+            West North Central - Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota
+            South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, 
+							 Virginia, and West Virginia
+			East South Central - Alabama, Kentucky, Mississippi, and Tennessee
+			West South Cental - Arkansas, Louisiana, Oklahoma, and Texas
+			Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
+			Pacific - Alaska, California, Hawaii, Oregon, and Washington
 
 ILI (influenza-like illness) - fever (temperature of 100°F [37.8° C] or greater) and a cough and/or a sore throat in the absence of a known cause other than influenza
 
