@@ -24,6 +24,8 @@ Region Types:
 		Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
 		Pacific - Alaska, California, Hawaii, Oregon, and Washington
 
+Week - The MMWR week is the week of the epidemiologic year for which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned by the reporting local or state health department for the purposes of MMWR disease incidence reporting and publishing. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year. 
+
 ILI (influenza-like illness) - fever (temperature of 100°F [37.8° C] or greater) and a cough and/or a sore throat in the absence of a known cause other than influenza
 
 ILI Weighted - The percentage of patient visits to healthcare providers for ILI reported each week is weighed on the basis of state population. The baseline is developed by calculating the mean percentage of patient visits for ILI during non-influenza weeks for the previous three seasons and adding two standard deviations.
