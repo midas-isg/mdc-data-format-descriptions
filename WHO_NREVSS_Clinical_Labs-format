@@ -1,3 +1,66 @@
+File Summary:
+Number of columns: 10
+Description: Data from clinical laboratories include the weekly total number of specimens tested, the number of positive influenza tests, and the percent positive by influenza type
+
+
+Column Summary:
+
+Column 1:REGION TYPE
+Description: 
+Data Type: String
+Possible Values: ["National", "States", "HHS Regions", "Census Regions"]
+
+
+Column 2: REGION
+Description:
+Data Type: String
+Possible Values: 
+	When the region type is "National": ["X"]
+	When the region type is "States": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "American Samoa", "Commonwealth of the Northern Mariana Islands", "Puerto Rico", "Virgin Islands", "New York City", "Los Angeles"]
+	When the region type is "HHS Regions": [Region][1-10]
+	When the region type is "Census Regions": ["New England", "Middle Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"]
+
+
+Column 3: YEAR
+Description:
+Data Type: Integer
+Possible Values: [0-9]{4}
+
+Column 4: WEEK
+Description: The week is the week of the epidemiologic year for which the disease report was conducted. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year.
+Data Type: Integer
+Possible Values: [1-53]
+
+Column 5: TOTAL SPECIMENS
+Description: The weekly total number of specimens tested.
+Data Type: String
+Possible Values: positiveInteger or "X"
+
+Column 6: TOTAL A
+Description: The number of specimens tested positive with  Influenza A.
+Data Type: String
+Possible Values: positiveInteger or "X"
+
+Column 7: TOTAL B
+Description: The number of specimens tested positive with  Influenza B.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 8: PERCENT POSITIVE
+Description: The percentage of specimens that tested positive with either Influenza A or B.
+Data Type: String
+Possible Values: double or "X"
+
+Column 9: PERCENT A
+Description: The percentage of specimens that tested positive with Influenza A.
+Data Type: String
+Possible Values: double or "X"
+
+Column 10: PERCENT B
+Description: The percentage of specimens that tested positive with Influenza B.
+Data Type: String
+Possible Values: double or "X"
+
 Region Types:
 	National
 	States
