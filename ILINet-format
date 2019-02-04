@@ -1,1 +1,9 @@
+Region Types:
+    National
+    HHS Regions - 
+    Census Regions - 
+    States -
 
+ILI (influenza-like illness) - fever (temperature of 100°F [37.8° C] or greater) and a cough and/or a sore throat in the absence of a known cause other than influenza
+
+ILI Weighted - The percentage of patient visits to healthcare providers for ILI reported each week is weighed on the basis of state population. The baseline is developed by calculating the mean percentage of patient visits for ILI during non-influenza weeks for the previous three seasons and adding two standard deviations.
