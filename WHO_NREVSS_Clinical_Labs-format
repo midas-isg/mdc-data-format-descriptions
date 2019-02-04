@@ -24,12 +24,12 @@ Possible Values:
 Column 3: YEAR
 Description:
 Data Type: Integer
-Possible Values: [0..+∞)
+Possible Values: [0 .. +∞)
 
 Column 4: WEEK
 Description: The week is the week of the epidemiologic year for which the disease report was conducted. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year.
 Data Type: Integer
-Possible Values: [1..53]
+Possible Values: [1 .. 53]
 
 Column 5: TOTAL SPECIMENS
 Description: The weekly total number of specimens tested.
