@@ -39,7 +39,7 @@ Possible Values: positiveInteger or "X"
 Column 6: TOTAL A
 Description: The number of specimens tested positive with  Influenza A.
 Data Type: String
-Possible Values: positiveInteger or "X"
+Possible Values: integer or "X"
 
 Column 7: TOTAL B
 Description: The number of specimens tested positive with  Influenza B.
