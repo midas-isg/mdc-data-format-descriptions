@@ -1,6 +1,7 @@
 File Summary:
 Number of columns: 11
-Description: Data presented from public health laboratories include the weekly total number of specimens tested, the number of positive influenza tests, and the number by influenza virus type, influenza A subtype, and influenza B lineage.
+Description: Data presented from public health laboratories include the weekly total number of specimens tested, the number of
+	positive influenza tests, and the number by influenza virus type, influenza A subtype, and influenza B lineage.
 
 Column Summary:
 
@@ -16,21 +17,30 @@ Description:
 Data Type: String
 Possible Values: 
 	When the region type is "National": ["X"]
-	When the region type is "States": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "American Samoa", "Commonwealth of the Northern Mariana Islands", "Puerto Rico", "Virgin Islands", "New York City", "Los Angeles"]
-	When the region type is "HHS Regions": ["Region"][1-10]
-	When the region type is "Census Regions": ["New England", "Middle Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"]
+	When the region type is "States": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		"Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", 
+		"Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", 
+		"Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", 
+		"New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", 
+		"South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", 
+		"West Virginia", "Wisconsin", "Wyoming", "American Samoa", "Commonwealth of the Northern Mariana Islands", 
+		"Puerto Rico", "Virgin Islands", "New York City", "Los Angeles"]
+	When the region type is "HHS Regions": [Region][1-10]
+	When the region type is "Census Regions": ["New England", "Middle Atlantic", "East North Central", 
+		"West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"]
 
 Column 3
 Name: SEASON_DESCRIPTION
-Description: The season for which the disease report was conducted. The NREVSS reporting season runs from the first week of July to the last week of June the following year.
+Description: The season for which the disease report was conducted. The NREVSS reporting season runs from the first week of 
+	July to the last week of June the following year.
 Data Type: String
-Possible Values: "Season 2018-19"
+Possible Values: "Season [1997 .. ∞)-[00 .. 99]"
 
 Column 4
 Name: TOTAL SPECIMENS
 Description: The weekly total number of specimens tested.
 Data Type: String
-Possible Values: integer or "X"
+Possible Values: "X" or integer [0 .. ∞)
 
 Column 5
 Name: A (2009 H1N1)
