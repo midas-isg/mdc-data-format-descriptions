@@ -5,13 +5,14 @@ Description: Data from clinical laboratories include the weekly total number of 
 
 Column Summary:
 
-Column 1:REGION TYPE
+Column 1
+Name: REGION TYPE
 Description: 
 Data Type: String
 Possible Values: ["National", "States", "HHS Regions", "Census Regions"]
 
-
-Column 2: REGION
+Column 2
+Name: REGION
 Description:
 Data Type: String
 Possible Values: 
@@ -20,83 +21,51 @@ Possible Values:
 	When the region type is "HHS Regions": [Region][1-10]
 	When the region type is "Census Regions": ["New England", "Middle Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"]
 
-
-Column 3: YEAR
-Description:
+Column 3
+Name: YEAR
+Description: The epidemiologic year for which the disease report was conducted.
 Data Type: Integer
 Possible Values: [0 .. +∞)
 
-Column 4: WEEK
+Column 4
+Name: WEEK
 Description: The week is the week of the epidemiologic year for which the disease report was conducted. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year.
 Data Type: Integer
 Possible Values: [1 .. 53]
 
-Column 5: TOTAL SPECIMENS
+Column 5
+Name: TOTAL SPECIMENS
 Description: The weekly total number of specimens tested.
 Data Type: String
 Possible Values: integer or "X"
 
-Column 6: TOTAL A
+Column 6
+Name: TOTAL A
 Description: The number of specimens tested positive with  Influenza A.
 Data Type: String
 Possible Values: integer or "X"
 
-Column 7: TOTAL B
+Column 7
+Name: TOTAL B
 Description: The number of specimens tested positive with  Influenza B.
 Data Type: String
 Possible Values: integer or "X"
 
-Column 8: PERCENT POSITIVE
+Column 8
+Name: PERCENT POSITIVE
 Description: The percentage of specimens that tested positive with either Influenza A or B.
 Data Type: String
 Possible Values: double or "X"
 
-Column 9: PERCENT A
+Column 9
+Name: PERCENT A
 Description: The percentage of specimens that tested positive with Influenza A.
 Data Type: String
 Possible Values: double or "X"
 
-Column 10: PERCENT B
+Column 10
+Name: PERCENT B
 Description: The percentage of specimens that tested positive with Influenza B.
 Data Type: String
 Possible Values: double or "X"
 
-Region Types:
-	National
-	States
-	HHS Regions:
-    		Region 1 - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
-            	Region 2 - New Jersey, New York, Puerto Rico, and U.S. Virgin Islands
-            	Region 3 - Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, and West Virginia
-            	Region 4 - Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee
-            	Region 5 - Illinois, Indiana, Michigan, Minnesota, Ohio, and Wisconsin
-            	Region 6 - Arkansas, Louisiana, New Mexico, Oklahoma, and Texas
-            	Region 7 -  Iowa, Kansas, Missouri, and Nebraska
-            	Region 8 - Colorado, Montana, North Dakota, South Dakota, Utah, and Wyoming
-            	Region 9 - Arizona, California, Hawaii, and Nevada
-            	Region 10 - Alaska, Idaho, Oregon, and Washington
-    	Census Regions - 
-            	New England - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
-            	Middle Atlantic - New Jersey, New York, Pennsylvania, Puerto Rico, and U.S. Virgin Islands
-            	East North Central - Indiana, Illinois, Michigan, Ohio, and Wisconsin
-            	West North Central - Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota
-            	South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, 
-				Virginia, and West Virginia
-		East South Central - Alabama, Kentucky, Mississippi, and Tennessee
-		West South Central - Arkansas, Louisiana, Oklahoma, and Texas
-		Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
-		Pacific - Alaska, California, Hawaii, Oregon, and Washington
-
-Week - The MMWR week is the week of the epidemiologic year for which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned by the reporting local or state health department for the purposes of MMWR disease incidence reporting and publishing. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that has at least four days in the calendar year. 
-
-Total Specimens - The weekly total number of specimens tested.
-
-Total A - The number of specimens tested positive with  Influenza A.
-
-Total B - The number of specimens tested positive with  Influenza B.
-
-Percent Positive - The percentage of specimens that tested positive with either Influenza A or B.
-
-Percentage A - The percentage of specimens that tested positive with Influenza A.
-
-Percentage B - The percentage of specimens that tested positive with Influenza B.
