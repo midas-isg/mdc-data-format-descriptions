@@ -1,39 +1,75 @@
-Region Types:
-	National
-	States
-	HHS Regions:
-        	Region 1 - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
-            	Region 2 - New Jersey, New York, Puerto Rico, and U.S. Virgin Islands
-            	Region 3 - Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, and West Virginia
-            	Region 4 - Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee
-            	Region 5 - Illinois, Indiana, Michigan, Minnesota, Ohio, and Wisconsin
-            	Region 6 - Arkansas, Louisiana, New Mexico, Oklahoma, and Texas
-            	Region 7 -  Iowa, Kansas, Missouri, and Nebraska
-            	Region 8 - Colorado, Montana, North Dakota, South Dakota, Utah, and Wyoming
-            	Region 9 - Arizona, California, Hawaii, and Nevada
-            	Region 10 - Alaska, Idaho, Oregon, and Washington
-    	Census Regions - 
-            	New England - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont
-            	Middle Atlantic - New Jersey, New York, Pennsylvania, Puerto Rico, and U.S. Virgin Islands
-            	East North Central - Indiana, Illinois, Michigan, Ohio, and Wisconsin
-            	West North Central - Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota
-            	South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, 
-				Virginia, and West Virginia
-		East South Central - Alabama, Kentucky, Mississippi, and Tennessee
-		West South Central - Arkansas, Louisiana, Oklahoma, and Texas
-		Mountain - Arizona, Colorado, Idaho, New Mexico, Montana, Utah, Nevada, and Wyoming
-		Pacific - Alaska, California, Hawaii, Oregon, and Washington
+File Summary:
+Number of columns: 11
+Description: Data presented from public health laboratories include the weekly total number of specimens tested, the number of positive influenza tests, and the number by influenza virus type, influenza A subtype, and influenza B lineage.
 
-Season Description - 
+Column Summary:
 
-Total Specimens - The weekly total number of specimens tested.
+Column 1
+Name: REGION TYPE
+Description: 
+Data Type: String
+Possible Values: ["National", "States", "HHS Regions", "Census Regions"]
 
-A (2009 H1N1) - The number of specimens that tested positive for Influenza A (2009 H1N1).
-A (H3) - The number of specimens that tested positive for Influenza A (H3).
-A (Subtyping not Performed) - The number of specimens that tested positive for Influenza A (Subtyping not Performed).
+Column 2
+Name: REGION
+Description:
+Data Type: String
+Possible Values: 
+	When the region type is "National": ["X"]
+	When the region type is "States": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "American Samoa", "Commonwealth of the Northern Mariana Islands", "Puerto Rico", "Virgin Islands", "New York City", "Los Angeles"]
+	When the region type is "HHS Regions": ["Region"][1-10]
+	When the region type is "Census Regions": ["New England", "Middle Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"]
 
-B - The number of specimens that tested positive for Influenza B.
-BVic - The number of specimens that tested positive for Influenza B/Victoria.
-BYam - The number of specimens that tested positive for Influenza B/Yamagata.
+Column 3
+Name: SEASON_DESCRIPTION
+Description: The season for which the disease report was conducted. The NREVSS reporting season runs from the first week of July to the last week of June the following year.
+Data Type: String
+Possible Values: "Season 2018-19"
 
-H3N2v - The number of specimens that tested positive for Influenza A (H3N2) Variant Virus.
+Column 4
+Name: TOTAL SPECIMENS
+Description: The weekly total number of specimens tested.
+Data Type: String
+Possible Values: integer or "X"
+
+Column 5
+Name: A (2009 H1N1)
+Description: The number of specimens that tested positive for Influenza A (2009 H1N1)
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 6
+Name: A (H3)
+Description: The number of specimens that tested positive for Influenza A (H3)
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 7
+Name: A (Subtyping not Performed)
+Description: The number of specimens that tested positive for Influenza A (Subtyping not Performed)
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 8
+Name: B
+Description: The number of specimens that tested positive for Influenza B
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 9
+Name: BVic
+Description: The number of specimens that tested positive for Influenza B/Victoria
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 10
+Name: BYam
+Description: The number of specimens that tested positive for Influenza B/Yamagata
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 11
+Name: H3N2v
+Description: The number of specimens that tested positive for Influenza A (H3N2) Variant Virus
+Data Type: Integer
+Possible Values: [0 .. ∞)
