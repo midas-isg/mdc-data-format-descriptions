@@ -178,3 +178,154 @@ Name: conjunctivitis
 Description:
 Data Type: String
 Possible Values: ["not mentioned", "absent", "present"]
+
+Column 30
+Name: crackles
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 31
+Name: croup
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 32
+Name: cyanosis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 33
+Name: decreased activity
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 34
+Name: diarrhea
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+
+Column 35
+Name: dyspnea
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 36
+Name: grunting
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 37
+Name: headache
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 38
+Name: hemoptysis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 39
+Name: hoarsness
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 40
+Name: hypoxemia (sp02 on room air < 90%)
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 41
+Name: ill-appearing
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 42
+Name: infiltrate
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 43
+Name: influenza-like illness
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 44
+Name: lab order (nasal swab)
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 45
+Name: lab positive adenovirus
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 46
+Name: lab positive coronavirus
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 47
+Name: lab positive enterovirus
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 48
+Name: lab positive hmpv
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 49
+Name: lab positive influenza
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 50
+Name: lab positive parainfluenza
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 51
+Name: lab positive rhinovirus 
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 52
+Name: lab positive rsv
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 53
+Name: lab positive strep a
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 54
+Name: lab positive vrp - pathogen not specified
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
