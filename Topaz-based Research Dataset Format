@@ -1,1 +1,180 @@
+File Summary:
+Number of columns: 94
+Description: 
 
+Column Summary: 
+
+Column 1
+Name: ENCOUNTER_ID
+Description:
+Data Type: Integer
+Possible Values: [1 .. ∞)
+
+Column 2
+Name: DATE
+Description:
+Data Type: Date
+Possible Values: [1/1/2010 .. 4/31/2015]
+
+Column 3
+Name: INFLUENZA_LAB
+Description:
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 4
+Name: RSV_LAB
+Description:
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 5
+Name: PARAINFLUENZA_LAB
+Description:
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 6
+Name: HMPV_LAB
+Description:
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 7
+Name: Posterior_prob_flu
+Description: Posterior_prob_flu + Posterior_prob_NILI + Posterior_prob_other = 1.
+	Visits with positive results in flu lab tests (miniPCR, PCR, culture, and DFA).
+Data Type: Double
+Possible Values: [0, 1]
+
+Column 8
+Name: Posterior_prob_NILI
+Description: Visits with negative results in flu lab tests (miniPCR, PCR, culture, and DFA), without any positive results.
+Data Type: Double
+Possible Values: [0, 1]
+
+Column 9
+Name: Posterior_prob_other
+Description: Visits with flu lab tests.
+Data Type: Double
+Possible Values: [0, 1]
+
+Column 10
+Name: loglikelihood_flu
+Description: 〖log〗_10  P (findings | disease = flu)
+Data Type: Double
+Possible Values: (-∞, 0]
+
+Column 11
+Name: loglikelihood_NILI
+Description: 〖log〗_10  P (findings | disease = NILI)
+Data Type: Double
+Possible Values: (-∞, 0]
+
+Column 12
+Name: loglikelihood_other
+Description: 〖log〗_10  P (findings | disease = other)
+Data Type: Double
+Possible Values: (-∞, 0]
+
+Column 13
+Name: highest measured temperature
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "low", "high", "inconsequential"]
+
+Column 14
+Name: abdominal pain
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 15
+Name: abdominal tenderness
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 16
+Name: abnormal chest radiograph findings
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 17
+Name: acute onset
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 18
+Name: anorexia
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 19
+Name: apnea
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 20
+Name: arthralgia
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 21
+Name: barking cough
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 22
+Name: bilateral acute conjunctivitis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 23
+Name: bronchiolitis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 24
+Name: bronchitis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 25
+Name: cervical lymphadenopathy
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 26
+Name: chest pain
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 27
+Name: chest wall retractions
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 28
+Name: chills
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 29
+Name: conjunctivitis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
