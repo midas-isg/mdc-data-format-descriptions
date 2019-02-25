@@ -235,7 +235,7 @@ Data Type: String
 Possible Values: ["not mentioned", "absent", "present"]
 
 Column 39
-Name: hoarsness
+Name: hoarseness
 Description:
 Data Type: String
 Possible Values: ["not mentioned", "absent", "present"]
@@ -329,3 +329,243 @@ Name: lab positive vrp - pathogen not specified
 Description:
 Data Type: String
 Possible Values: ["not mentioned", "absent", "present"]
+
+Column 55
+Name: lab testing ordered (influenza w/other respiratory pathogens panel)
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 56
+Name: lab testing ordered (influenza)
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 57
+Name: lab testing ordered (rsv)
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 58
+Name: malaise
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 59
+Name: metapneumovirus
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 60
+Name: myalgia
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 61
+Name: nasal flaring
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 62
+Name: nausea
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 63
+Name: nonproductive cough
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 64
+Name: other abnormal breath sounds
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 65
+Name: other cough
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 66
+Name: other pneumonia
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 67
+Name: parainfluenza
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 68
+Name: paroxysmal cough
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 69
+Name: pharyngitis diagnosis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 70
+Name: pharyngitis on exam
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 71
+Name: poor feeding
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 72
+Name: poor response of fever to antipyretics
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 73
+Name: productive cough
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 74
+Name: rales
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 75
+Name: reported fever
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 76
+Name: respiratory distress
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 77
+Name: rhonchi
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 78
+Name: rigor
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 79
+Name: runny nose
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 80
+Name: seizure
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 81
+Name: sore throat
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 82
+Name: staccato cough
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 83
+Name: streptococcal pharyngitis
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 84
+Name: stridor
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 85
+Name: stuffy nose
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 86
+Name: tachypnea
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 87
+Name: toxic appearance
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 88
+Name: uri
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 89
+Name: viral pneumonia
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 90
+Name: viral syndrome
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 91
+Name: vomiting
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 92
+Name: weakness or fatigue
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 93
+Name: wheezing
+Description:
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 94
+Name: agegroup
+Description:
+Data Type: String
+Possible Values: ["ls6", "ge6ls65", "ge65"]
