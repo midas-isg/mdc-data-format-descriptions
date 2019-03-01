@@ -1,0 +1,496 @@
+Description: This is the description of the Probabilistic Disease Surveillance Dataset Format v1.0.
+Document Version: 2
+Contact: isg-feedback@pitt.edu
+
+Number of columns: 94
+
+Column 1
+Name: ENCOUNTER_ID
+Data Type: Integer
+Possible Values: [1 .. ∞)
+
+Column 2
+Name: DATE
+Data Type: Date
+Possible Values: [1/1/2010 .. 4/31/2015]
+
+Column 3
+Name: INFLUENZA_LAB
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 4
+Name: RSV_LAB
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 5
+Name: PARAINFLUENZA_LAB
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 6
+Name: HMPV_LAB
+Data Type: String
+Possible Values: ["NotTested", "NEG", "POS"]
+
+Column 7
+Name: Posterior_prob_flu
+Description: Posterior_prob_flu + Posterior_prob_NILI + Posterior_prob_other = 1.
+	Visits with positive results in flu lab tests (miniPCR, PCR, culture, and DFA).
+Data Type: Double
+Possible Values: [0, 1]
+
+Column 8
+Name: Posterior_prob_NILI
+Description: Visits with negative results in flu lab tests (miniPCR, PCR, culture, and DFA), without any positive results.
+Data Type: Double
+Possible Values: [0, 1]
+
+Column 9
+Name: Posterior_prob_other
+Description: Visits with flu lab tests.
+Data Type: Double
+Possible Values: [0, 1]
+
+Column 10
+Name: loglikelihood_flu
+Description: 〖log〗_10  P (findings | disease = flu)
+Data Type: Double
+Possible Values: (-∞, 0]
+
+Column 11
+Name: loglikelihood_NILI
+Description: 〖log〗_10  P (findings | disease = NILI)
+Data Type: Double
+Possible Values: (-∞, 0]
+
+Column 12
+Name: loglikelihood_other
+Description: 〖log〗_10  P (findings | disease = other)
+Data Type: Double
+Possible Values: (-∞, 0]
+
+Column 13
+Name: highest measured temperature
+Data Type: String
+Possible Values: ["not mentioned", "low", "high", "inconsequential"]
+
+Column 14
+Name: abdominal pain
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 15
+Name: abdominal tenderness
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 16
+Name: abnormal chest radiograph findings
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 17
+Name: acute onset
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 18
+Name: anorexia
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 19
+Name: apnea
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 20
+Name: arthralgia
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 21
+Name: barking cough
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 22
+Name: bilateral acute conjunctivitis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 23
+Name: bronchiolitis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 24
+Name: bronchitis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 25
+Name: cervical lymphadenopathy
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 26
+Name: chest pain
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 27
+Name: chest wall retractions
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 28
+Name: chills
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 29
+Name: conjunctivitis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 30
+Name: crackles
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 31
+Name: croup
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 32
+Name: cyanosis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 33
+Name: decreased activity
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 34
+Name: diarrhea
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+
+Column 35
+Name: dyspnea
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 36
+Name: grunting
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 37
+Name: headache
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 38
+Name: hemoptysis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 39
+Name: hoarseness
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 40
+Name: hypoxemia (sp02 on room air < 90%)
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 41
+Name: ill-appearing
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 42
+Name: infiltrate
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 43
+Name: influenza-like illness
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 44
+Name: lab order (nasal swab)
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 45
+Name: lab positive adenovirus
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 46
+Name: lab positive coronavirus
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 47
+Name: lab positive enterovirus
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 48
+Name: lab positive hmpv
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 49
+Name: lab positive influenza
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 50
+Name: lab positive parainfluenza
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 51
+Name: lab positive rhinovirus 
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 52
+Name: lab positive rsv
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 53
+Name: lab positive strep a
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 54
+Name: lab positive vrp - pathogen not specified
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 55
+Name: lab testing ordered (influenza w/other respiratory pathogens panel)
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 56
+Name: lab testing ordered (influenza)
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 57
+Name: lab testing ordered (rsv)
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 58
+Name: malaise
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 59
+Name: metapneumovirus
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 60
+Name: myalgia
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 61
+Name: nasal flaring
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 62
+Name: nausea
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 63
+Name: nonproductive cough
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 64
+Name: other abnormal breath sounds
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 65
+Name: other cough
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 66
+Name: other pneumonia
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 67
+Name: parainfluenza
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 68
+Name: paroxysmal cough
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 69
+Name: pharyngitis diagnosis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 70
+Name: pharyngitis on exam
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 71
+Name: poor feeding
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 72
+Name: poor response of fever to antipyretics
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 73
+Name: productive cough
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 74
+Name: rales
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 75
+Name: reported fever
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 76
+Name: respiratory distress
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 77
+Name: rhonchi
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 78
+Name: rigor
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 79
+Name: runny nose
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 80
+Name: seizure
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 81
+Name: sore throat
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 82
+Name: staccato cough
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 83
+Name: streptococcal pharyngitis
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 84
+Name: stridor
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 85
+Name: stuffy nose
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 86
+Name: tachypnea
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 87
+Name: toxic appearance
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 88
+Name: uri
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 89
+Name: viral pneumonia
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 90
+Name: viral syndrome
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 91
+Name: vomiting
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 92
+Name: weakness or fatigue
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 93
+Name: wheezing
+Data Type: String
+Possible Values: ["not mentioned", "absent", "present"]
+
+Column 94
+Name: agegroup
+Data Type: String
+Possible Values: ["ls6", "ge6ls65", "ge65"]
+
+Example data:
+ENCOUNTER_ID,ADMIT_DATE,INFLUENZA_LAB,RSV_LAB,PARAINFLUENZA_LAB,HMPV_LAB,Posterior_prob_flu,Posterior_prob_NILI,Posterior_prob_other,loglikelihood_flu,loglikelihood_NILI,loglikelihood_other,highest measured temperature,abdominal pain,abdominal tenderness,abnormal chest radiograph findings,acute onset,anorexia,apnea,arthralgia,barking cough,bilateral acute conjunctivitis,bronchiolitis,bronchitis,cervical lymphadenopathy,chest pain,chest wall retractions,chills,conjunctivitis,crackles,croup,cyanosis,decreased activity,diarrhea,dyspnea,grunting,headache,hemoptysis,hoarseness,hypoxemia (sp02 on room air < 90%),ill-appearing,infiltrate,influenza-like illness,lab order (nasal swab),lab positive adenovirus,lab positive coronavirus,lab positive enterovirus,lab positive hmpv,lab positive influenza,lab positive parainfluenza,lab positive rhinovirus,lab positive rsv,lab positive strep a,lab positive vrp - pathogen not specified,lab testing ordered (influenza w/other respiratory pathogens panel),lab testing ordered (influenza),lab testing ordered (rsv),malaise,metapneumovirus,myalgia,nasal flaring,nausea,nonproductive cough,other abnormal breath sounds,other cough,other pneumonia,parainfluenza,paroxysmal cough,pharyngitis diagnosis,pharyngitis on exam,poor feeding,poor response of fever to antipyretics,productive cough,rales,reported fever,respiratory distress,rhonchi,rigor,runny nose,seizure,sore throat,staccato cough,streptococcal pharyngitis,stridor,stuffy nose,tachypnea,toxic appearance,uri,viral pneumonia,viral syndrome,vomiting,weakness or fatigue,wheezing,agegroup
+1,1/1/08,NotTested,NotTested,NotTested,NotTested,0.000257878,0.001629623,0.998112499,-4.028565786,-3.550438008,-1.84447177,inconsequential,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,ge6ls65
+2,7/1/10,NotTested,NotTested,NotTested,NotTested,0.284627401,0.097458305,0.617914294,-4.53390846,-5.321911556,-5.600928335,low,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,absent,absent,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,absent,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,absent,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,ge6ls65
+3,6/1/09,NEG,POS,NEG,NEG,0.000257878,0.001629623,0.998112499,-4.028565786,-3.550438008,-1.84447177,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,absent,absent,absent,present,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,absent,present,present,not mentioned,absent,present,not mentioned,not mentioned,absent,not mentioned,absent,present,absent,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,present,absent,present,not mentioned,absent,absent,not mentioned,present,not mentioned,not mentioned,present,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,present,present,not mentioned,ls6
+4,8/19/12,NotTested,NotTested,NotTested,NotTested,0.000964417,0.001336003,0.99769958,-4.761377229,-4.942380134,-3.150313913,high,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,absent,not mentioned,not mentioned,absent,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,absent,not mentioned,present,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,absent,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,present,ge6ls65
+5,1/1/08,NotTested,NotTested,NotTested,NotTested,0.787826136,0.205586549,0.006587315,-7.499094237,-8.405075167,-10.98048762,inconsequential,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,present,not mentioned,not mentioned,present,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,absent,present,absent,not mentioned,not mentioned,not mentioned,not mentioned,present,absent,ge65
+6,1/1/08,NotTested,NotTested,NotTested,NotTested,0.000273889,0.002078629,0.997647482,-4.002202462,-3.444545737,-1.84447177,low,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,absent,not mentioned,present,absent,not mentioned,not mentioned,not mentioned,absent,absent,present,not mentioned,not mentioned,not mentioned,absent,not mentioned,ge6ls65
+7,11/12/11,NotTested,NotTested,NotTested,NotTested,0.023259591,0.020317288,0.956423121,-1.937375303,-2.318656888,-1.726998728,not mentioned,present,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,absent,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,present,not mentioned,not mentioned,present,absent,present,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,present,present,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,ls6
+8,1/1/08,NotTested,NotTested,NotTested,NotTested,0.000273889,0.002078629,0.997647482,-4.002202462,-3.444545737,-1.84447177,high,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,present,absent,not mentioned,not mentioned,absent,not mentioned,not mentioned,present,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,absent,absent,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,absent,not mentioned,not mentioned,absent,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,ge6ls65
+9,5/1/10,NotTested,NotTested,NotTested,NotTested,0.000279216,0.00296764,0.996753143,-5.516010594,-4.812085056,-3.367034895,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,absent,not mentioned,absent,absent,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,absent,absent,not mentioned,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,absent,absent,not mentioned,absent,absent,present,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,present,not mentioned,absent,absent,absent,not mentioned,not mentioned,ge6ls65
+10,3/21/15,NotTested,NotTested,NotTested,NotTested,0.028871158,0.068440048,0.902688794,-3.265535186,-3.213234326,-3.174132748,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,absent,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,absent,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,absent,absent,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,not mentioned,ge65
