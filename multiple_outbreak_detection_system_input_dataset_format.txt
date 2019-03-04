@@ -1,0 +1,60 @@
+File Summary:
+Number of columns: 15
+Description: One file containing information for each patient during reporting period
+
+Column Summary:
+
+Column 1
+Name: id
+Description: Unique patient identifier 
+Data Type: 
+Possible Values: 
+
+Column 2
+Name: dateAdmitted
+Description: Date of Admission 
+Data Type: Date
+Possible Values: "mm/dd/YY"
+
+Column 3
+Name: influenzaLL
+Description: Log-likelihood of findings given influenza 
+Data Type: Double
+Possible Values: (∞ .. ∞)
+
+Column 4
+Name: niiliLL
+Description: Log-likelihood of findings given non-influenza ILI 
+Data Type: Double
+Possible Values: (∞ .. ∞)
+
+Column 5
+Name: otherLL
+Description: Log-likelihood of findings given other 
+Data Type: Double
+Possible Values: (∞ .. ∞)
+
+Column 6
+Name: influenzaP
+Description: Probability of influenza 
+Data Type: Double
+Possible Values: [0, 100]
+
+Column 7
+Name: niiliP
+Description: Probability of non-influenza ILI 
+Data Type: Double
+Possible Values: [0, 100]
+
+Column 8
+Name: otherP
+Description: Probability of other 
+Data Type: Double
+Possible Values: [0, 100]
+
+Column 9
+Name: test
+Description: Result of influenza laboratory test (usually MISSING) 
+Data Type: String
+Possible Values: "MISSING" or 
+
