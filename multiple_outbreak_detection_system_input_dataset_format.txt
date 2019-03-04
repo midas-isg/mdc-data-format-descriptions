@@ -1,5 +1,5 @@
 File Summary:
-Number of columns: 15
+Number of columns: 9
 Description: One file containing information for each patient during reporting period
 
 Column Summary:
@@ -7,8 +7,8 @@ Column Summary:
 Column 1
 Name: id
 Description: Unique patient identifier 
-Data Type: 
-Possible Values: 
+Data Type: Integer
+Possible Values: [1 .. ∞)
 
 Column 2
 Name: dateAdmitted
@@ -56,5 +56,4 @@ Column 9
 Name: test
 Description: Result of influenza laboratory test (usually MISSING) 
 Data Type: String
-Possible Values: "MISSING" or 
-
+Possible Values: "MISSING"
