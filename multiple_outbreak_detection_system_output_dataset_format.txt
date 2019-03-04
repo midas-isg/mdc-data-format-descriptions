@@ -1,0 +1,16 @@
+File Summary: A disease forcast
+Number of columns: 2
+Description: One file with information for each week during reporting period.
+
+Column Summary:
+
+Column 1
+Name: Date
+Description: The date that is being forcas.
+Data Type: Date
+
+Column 2
+Name: Cases
+Description: The number of cases in the general population.
+Data Type: Integer
+Possible Values: [0 .. ∞)
