@@ -1,0 +1,88 @@
+File Summary:
+Number of columns: 13
+Description: One file with information for each week during reporting period.
+
+Column Summary:
+
+Column 1
+Name: YEAR
+Description: The epidemiologic year for which the disease report was conducted. As of February 2019, the earliest year that 
+	FluView has data for is 1997.
+Data Type: Integer
+Possible Values: [1997 .. ∞)
+
+Column 2
+Name: WEEK
+Description: The week is the week of the epidemiologic year for which the disease report was conducted. Values for MMWR week 
+	range from 1 to 53, although most years consist of 52 weeks. Week #1 of an MMWR year is the first week of the year that
+	has at least four days in the calendar year.
+Data Type: Integer
+Possible Values: [1 .. 53]
+
+Column 3
+Name: % WEIGHTED ILI
+Description: Weighted percentage of patients that were reported having influenza-like illnesses. The percentage of patient 
+	visits to healthcare providers for ILI reported each week is weighted on the basis of state population. This percentage
+	is compared each week with the national baseline.
+Data Type: String
+Possible Values: "X" or double [0, 100]
+
+Column 4
+Name: %UNWEIGHTED ILI
+Description: Unweighted percentage of patients that were reported having influenza-like illnesses.
+Data Type: Double
+Possible Values: [0, 100]
+
+Column 5
+Name: AGE 0-4
+Description: Number of patients between the ages of 0 and 4 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 6
+Name: AGE 25-49
+Description: Number of patients between the ages of 25 and 49 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 7
+Name: AGE AGE 25-64
+Description: Number of patients between the ages of 25 and 64 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 8
+Name: AGE 5-24
+Description: Number of patients between the ages of 5 and 24 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 9
+Name: AGE 50-64
+Description: Number of patients between the ages of 50 and 64 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 10
+Name: AGE 65
+Description: Number of patients 65 and older that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 11
+Name: ILITOTAL
+Description: Total number of patients that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 12
+Name: NUM. OF PROVIDERS
+Description: Number of outpatient healthcare providers that supplied reports.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 13
+Name: TOTAL PATIENTS
+Description: Total number of patients that were tested for influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
