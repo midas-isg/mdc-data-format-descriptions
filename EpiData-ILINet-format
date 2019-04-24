@@ -1,44 +1,111 @@
 File Summary:
-Number of possible elements: 17
+Number of columns: 17
 Description: This JSON data format is used by the Delphi EpiData web service for returning lists of weekly 
-observations of influenza-like-illness activity in different locations.  The data are collected by 
-CDC’s ILI Sentinel Physician network.
+  observations of influenza-like-illness activity in different locations.  The data are collected by 
+  CDC’s ILI Sentinel Physician network.
 
-+---------------+-------------+
-| Field         | Type        |
-+---------------+-------------+
-| release_date  | date        | 
-| issue         | int(11)     | 
-| epiweek       | int(11)     | 
-| region        | varchar(12) | 
-| lag           | int(11)     | 
-| num_ili       | int(11)     | 
-| num_patients  | int(11)     | 
-| num_providers | int(11)     | 
-| wili          | double      | 
-| ili           | double      | 
-| num_age_0     | int(11)     | 
-| num_age_1     | int(11)     | 
-| num_age_2     | int(11)     | 
-| num_age_3     | int(11)     | 
-| num_age_4     | int(11)     |
-| num_age_5     | int(11)     | 
-+---------------+-------------+
+Column Summary:
 
-release_date: the date when this record was first published by the CDC
-issue: the epiweek of publication (e.g. issue 201453 includes epiweeks up to
-  and including 2014w53, but not 2015w01 or following)
-epiweek: the epiweek during which the data was collected
-region: the name of the location (e.g. 'nat', 'hhs1', 'cen9', 'pa', 'jfk')
-lag: number of weeks between `epiweek` and `issue`
-num_ili: the number of ILI cases (numerator)
-num_patients: the total number of patients (denominator)
-num_providers: the number of reporting healthcare providers
-wili: weighted percent ILI
-ili: unweighted percent ILI
-num_age_0: number of cases in ages 0-4
-num_age_1: number of cases in ages 5-24
-num_age_2: number of cases in ages 25-64
-num_age_3: number of cases in ages 25-49
-num_age_4: number of cases in ages 50-64
-num_age_5: number of cases in ages 65+
+Column 1
+Name: RELEASE_DATE
+Description: The date when this record was first published by the CDC.
+Data Type: Date
+Possible Values: yyyy-MM-dd
+
+Column 2
+Name: ISSUE
+Description: The epiweek of publication (e.g. issue 201453 includes epiweeks up to and including 2014w53, but not 2015w01 or
+  following).
+Data Type: Integer
+Possible Values: YYYYWW
+
+Column 3
+Name: EPIWEEK
+Description: The epiweek during which the data was collected.
+Data Type: Integer
+Possible Values: YYYYWW
+
+Column 4
+Name: REGION
+Description: The name of the location.
+Data Type: String
+Possible Values: ["nat", "hhs1", "hhs2", "hhs3", "hhs4", "hhs5", "hhs6", "hhs7", "hhs8", "hhs9", "hhs10", "cen1", "cen2", 
+  "cen3", "cen4", "cen5", "cen6", "cen7", "cen8", "cen9"]
+
+Column 5
+Name: LAG
+Description: The  number of weeks between 'epiweek' and 'issue'.
+Data Type: Integer
+Possible Values:  (-∞ .. ∞)
+
+Column 6
+Name: NUM_ILI
+Description: The number of ILI cases (numerator).
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 7
+Name: NUM_PATIENTS
+Description: The total number of patients (denominator).
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 8
+Name: NUM_PROVIDERS
+Description: The number of reporting healthcare providers.
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 9
+Name: WILI
+Description: Weighted percent ILI.
+Data Type: Double
+Possible Values: [0 .. ∞)
+
+Column 10
+Name: ILI
+Description: Unweighted percent ILI.
+Data Type: Double
+Possible Values: [0 .. ∞)
+
+Column 11
+Name: AGE 50-64
+Description: Number of patients between the ages of 50 and 64 that were reported having influenza-like illnesses.
+Data Type: String
+Possible Values: "X" or integer [0 .. ∞)
+
+Column 12
+Name: NUM_AGE_0
+Description: Number of cases in ages 0-4.
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 13
+Name: NUM_AGE_1
+Description: Number of cases in ages 5-24.
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 14
+Name: NUM_AGE_2
+Description: Number of cases in ages 25-64.
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 15
+Name: NUM_AGE_3
+Description: Number of cases in ages 25-49.
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 16
+Name: NUM_AGE_4
+Description: Number of cases in ages 50-64.
+Data Type: Integer
+Possible Values: [0 .. ∞)
+
+Column 17
+Name: NUM_AGE_5
+Description: Number of cases in ages 65+.
+Data Type: Integer
+Possible Values: [0 .. ∞)
