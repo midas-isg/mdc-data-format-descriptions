@@ -1,1 +1,1 @@
-Allegheny County ED Visits for Probabilistic Disease Surveillance
+A data use agreement with the University of Pittsburgh is required to access the Allegheny County ED Visits for Probabilistic Disease Surveillance dataset.  Please contact isg-feedback@pitt.edu to initate the process of obtaining a data use agreement.
