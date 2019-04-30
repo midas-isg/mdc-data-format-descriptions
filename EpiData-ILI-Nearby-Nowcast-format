@@ -1,1 +1,32 @@
-Description to be specifed.
+File Summary:
+Number of columns: 4
+Description: This JSON data format is used by EpiData ILI Nearby Nowcast.  A nowcast of U.S. national, 
+regional, and state-level (weighted) %ILI, available seven days (regionally) or five days (state-level) 
+before the first ILINet report for the corresponding week.
+
+Column Summary:
+
+Column 1
+Name: LOCATION
+Description: The name of the location.
+Data Type: String
+Possible Values: ["nat", "hhs1", "hhs2", "hhs3", "hhs4", "hhs5", "hhs6", "hhs7", "hhs8", "hhs9", "hhs10", "cen1", "cen2", 
+  "cen3", "cen4", "cen5", "cen6", "cen7", "cen8", "cen9"]
+
+Column 2
+Name: EPIWEEK
+Description: The epiweek during which the data was collected.
+Data Type: Integer
+Possible Values: YYYYWW
+
+Column 3
+Name: VALUE
+Description: Weighted percent ILI.
+Data Type: Double
+Possible Values: [0 .. ∞)
+
+Column 4
+Name: STD
+Description: Standard Deviation
+Data Type: Double
+Possible Values: [0 .. ∞)
