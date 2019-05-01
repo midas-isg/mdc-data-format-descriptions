@@ -1,0 +1,23 @@
+File Summary:
+Number of columns: 2...k
+Description: This csv data format is used by the Columbia University disease 
+  forecasters: BMA, EAKFC SEIRS, EAKFC SIRS, EKF SEIRS, EKF SIRS, RHF SEIRS, RHF SIRS.  
+  The version of  documented here was used in the 7-year retrospective FluSight forecasting 
+  evaluation described in "A collaborative multiyear, multimodel assessment of seasonal 
+  influenza forecasting in the United States." DOI: 10.1073/pnas.1812594116 that 
+  participated in the 7-year retrospective influenza forecasting challenge.  
+  The format is Column 1: < Week>; Column 2...k: <humidity for kth location>
+
+Column Summary:
+
+Column 1
+Name: WEEK
+Description: The epiweek during which the data was collected.
+Data Type: Integer
+Possible Values: YYYYWW
+
+Column 2...k
+Name: HUMIDITY
+Description: Absolute humidity is the total mass of water vapor present in a given volume or mass of air.
+Data Type: Integer
+Possible Values: [0 .. ∞)
